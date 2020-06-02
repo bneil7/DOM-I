@@ -65,6 +65,20 @@ newCTAimg.src = siteContent['cta']['img-src'];
 
 // MAIN CONTENT 
 
+const newH4 = document.querySelectorAll('.main-content h4');
+newH4[0].textContent = siteContent['main-content']['features-h4'];
+newH4[1].textContent = siteContent['main-content']['about-h4'];
+newH4[2].textContent = siteContent['main-content']['services-h4'];
+newH4[3].textContent = siteContent['main-content']['product-h4'];
+newH4[4].textContent = siteContent['main-content']['vision-h4'];
+
+const newContent = document.querySelectorAll('.main-content p');
+newContent[0].textContent = siteContent['main-content']['features-content'];
+newContent[1].textContent = siteContent['main-content']['about-content'];
+newContent[2].textContent = siteContent['main-content']['services-content'];
+newContent[3].textContent = siteContent['main-content']['product-content'];
+newContent[4].textContent = siteContent['main-content']['vision-content'];
+
 // CONTACT 
 
 // FOOTER 
