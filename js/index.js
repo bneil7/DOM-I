@@ -84,4 +84,15 @@ newMiddleImg.src = siteContent['main-content']['middle-img-src'];
 
 // CONTACT 
 
+const newContactH4 = document.querySelector('.contact h4');
+newContactH4.textContent = siteContent.contact['contact-h4'];
+
+const newContactP = document.querySelectorAll('.contact p');
+newContactP[0].textContent = siteContent.contact['address'];
+newContactP[1].textContent = siteContent.contact['phone'];
+newContactP[2].textContent = siteContent.contact['email'];
+
 // FOOTER 
+
+const newFooter = document.querySelector('footer p');
+newFooter.textContent = siteContent.footer['copyright'];
