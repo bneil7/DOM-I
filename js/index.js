@@ -79,6 +79,9 @@ newContent[2].textContent = siteContent['main-content']['services-content'];
 newContent[3].textContent = siteContent['main-content']['product-content'];
 newContent[4].textContent = siteContent['main-content']['vision-content'];
 
+const newMiddleImg = document.querySelector('#middle-img');
+newMiddleImg.src = siteContent['main-content']['middle-img-src'];
+
 // CONTACT 
 
 // FOOTER 
