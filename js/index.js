@@ -51,14 +51,26 @@ newNav[2].textContent = siteContent.nav['nav-item-3'];
 newNav[3].textContent = siteContent.nav['nav-item-4'];
 newNav[4].textContent = siteContent.nav['nav-item-5'];
 newNav[5].textContent = siteContent.nav['nav-item-6'];
-
+////nav color green
 newNav.forEach(links => links.style.color = 'green');
+////appendChild and prepend two new nav elements
+const newNavChildren = document.querySelector('nav');
+const newLink = document.createElement('a');
+newLink.textContent = 'Lorem';
+newLink.style.color = 'green';
 
+const newLink2 = document.createElement('a');
+newLink2.textContent = 'Ipsum';
+newLink2.style.color = 'green';
+
+newNavChildren.prepend(newLink);
+newNavChildren.appendChild(newLink2);
 
 // CTA
 
 const newCTA = document.querySelector('.cta-text h1');
-newCTA.textContent = siteContent['cta']['h1'];
+newCTA.innerHTML = `DOM <br> Is <br> Awesome`;
+
 
 const newBtn = document.querySelector('.cta-text button');
 newBtn.textContent = siteContent['cta']['button'];
@@ -91,7 +103,7 @@ const newContactH4 = document.querySelector('.contact h4');
 newContactH4.textContent = siteContent.contact['contact-h4'];
 
 const newContactP = document.querySelectorAll('.contact p');
-newContactP[0].textContent = siteContent.contact['address'];
+newContactP[0].innerHTML = `123 Way 456 Street <br> Somewhere, USA`;
 newContactP[1].textContent = siteContent.contact['phone'];
 newContactP[2].textContent = siteContent.contact['email'];
 
