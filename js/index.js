@@ -52,6 +52,9 @@ newNav[3].textContent = siteContent.nav['nav-item-4'];
 newNav[4].textContent = siteContent.nav['nav-item-5'];
 newNav[5].textContent = siteContent.nav['nav-item-6'];
 
+newNav.forEach(links => links.style.color = 'green');
+
+
 // CTA
 
 const newCTA = document.querySelector('.cta-text h1');
